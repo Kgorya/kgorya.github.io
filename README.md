@@ -1,2 +1,0 @@
-# kgorya.github.io
-Root
