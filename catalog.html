@@ -3,23 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Перфараторы "Техномарт"</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/normalize.css">
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo" href="index.html">
-				<b class="logo">Техномарт</b>
-			</a>
-			<form class="search-site" action="https://echo.htmlacademy.ru" method="get">
-				<input class="search-site" name="search" type="search" placeholder="Поиск" value="">
-				<button type="submit" class="visually-hidden search-button">Найти</button>
-			</form>
-			<ul class="site-navigation-btn">
-				<li class="header-btn bookmarks-btn"><a href="#">Закладки:0</a></li>
-				<li class="header-btn basket-btn"><a href="#">Корзина:0</a></li>
-				<li class="header-btn сheckout-btn"><a href="#">Оформить заказ</a></li>
-			</ul>
-			<h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+		<nav>
+			<div class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<b class="logo">Техномарт</b>
+				</a>
+				<form class="search-site" action="https://echo.htmlacademy.ru" method="get">
+					<input class="search-site" name="search" type="search" placeholder="Поиск" value="">
+					<button type="submit" class="visually-hidden search-button">Найти</button>
+				</form>
+				<ul class="site-navigation-btn">
+					<li class="header-btn bookmarks-btn"><a href="#">Закладки:0</a></li>
+					<li class="header-btn basket-btn"><a href="#">Корзина:0</a></li>
+					<li class="header-btn сheckout-btn"><a href="#">Оформить заказ</a></li>
+				</ul>
+			</div>
+			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<ul class="header-contact">
 				<li class="header-contact-phone">+7 (812) 555-05-55</li>
 				<li class="header-contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
@@ -47,12 +52,12 @@
 		</nav>
 	</header>
 	<main class="container">
-		<h1 class="page-title">Перфараторы</h1>
+		<h2 class="page-title">Перфараторы</h1>
 		<ul class="breadcrumbs-list">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a href="tool.html">Инструмент</a></li>
-			<li>Перфараторы</li>	
+			<li class=".breadcrumbs-confirm">Перфараторы</li>	
 		</ul>
 		<section class="filter-main">
 			<h2 class="filter-title">Фильтр</h2>
@@ -65,23 +70,23 @@
 					<legend>Производители:</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="checkbox" value="production" name="bosch"  class="visually-hidden input input-checkbox" id="filter-bosch" checked>
+							<input type="checkbox" value="production" name="bosch"  class="input input-checkbox" id="filter-bosch" checked>
 							<label for="filter-bosch">Bosch</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" value="production" name="interskol"  class="visually-hidden input input-checkbox" id="filter-interskol">
+							<input type="checkbox" value="production" name="interskol"  class="input input-checkbox" id="filter-interskol">
 							<label for="filter-interskol">Интерскол</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" value="production" name="makita"  class="visually-hidden input input-checkbox" id="filter-makita" checked>
+							<input type="checkbox" value="production" name="makita"  class="input input-checkbox" id="filter-makita" checked>
 							<label for="filter-makita">Makita</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" value="production" name="dewalt"  class="visually-hidden input input-checkbox" id="filter-dewalt">
+							<input type="checkbox" value="production" name="dewalt"  class="input input-checkbox" id="filter-dewalt">
 							<label for="filter-dewalt">Dewalt</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" value="production" name="hitachi"  class="visually-hidden input input-checkbox" id="filter-hitachi">
+							<input type="checkbox" value="production" name="hitachi"  class="input input-checkbox" id="filter-hitachi">
 							<label for="filter-hitachi">Hitachi</label>
 						</li>
 					</ul>
@@ -90,11 +95,11 @@
 					<legend>Питание:</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="radio" name="power" class="visually-hidden input input-checkbox" value="battery" id="filter-battary">
+							<input type="radio" name="power" class="input input-checkbox" value="battery" id="filter-battary">
 							<label for="filter-battary">Аккумуляторные</label>
 						</li>
 						<li class="filter-option">
-							<input type="radio" name="power" class="visually-hidden input input-checkbox" value="sockets" id="filter-sockets">
+							<input type="radio" name="power" class="input input-checkbox" value="sockets" id="filter-sockets">
 							<label for="filter-sockets">Сетевые</label>
 						</li>
 					</ul>
@@ -121,7 +126,7 @@
 				<li class="catalog-item">
 					<a href="#">
 						<h3>
-							<span class="catalog-item-title">Перфоратор BOSCH</span>
+							<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 							<span class="catalog-item-model">BFG 3000</span>
 						</h3>
 							<p class="catalog-item-image">
@@ -140,7 +145,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 6000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -159,7 +164,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 2000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -177,7 +182,7 @@
 				<li class="catalog-item">
 					<a href="#">
 						<h3>
-							<span class="catalog-item-title">Перфоратор BOSCH</span>
+							<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 							<span class="catalog-item-model">BFG 3000</span>
 						</h3>
 							<p class="catalog-item-image">
@@ -196,7 +201,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 6000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -215,7 +220,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 2000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -233,7 +238,7 @@
 				<li class="catalog-item">
 					<a href="#">
 						<h3>
-							<span class="catalog-item-title">Перфоратор BOSCH</span>
+							<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 							<span class="catalog-item-model">BFG 3000</span>
 						</h3>
 							<p class="catalog-item-image">
@@ -252,7 +257,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 6000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -271,7 +276,7 @@
 					<li class="catalog-item">
 						<a href="#">
 							<h3>
-								<span class="catalog-item-title">Перфоратор BOSCH</span>
+								<span class="catalog-item-title">Перфоратор BOSCH</span><br>
 								<span class="catalog-item-model">BFG 2000</span>
 							</h3>
 							<p class="catalog-item-image">
@@ -326,11 +331,11 @@
 			<li><a class="social-button" href="#">Instagram</a></li>
 		</ul> 
 		</div>
-		<p>
+		<p class="footer-mail">
 			Обратная связь<br>
-			<a class="footer-mail" href="#">mail@htmlacademy.ru</a>	
+			<a href="#">mail@htmlacademy.ru</a>	
 		</p>
-		<p>
+		<p class="footer-developer">
 			Разработано<br>
 			<a href="#">htmlacademy.ru</a>		
 		</p>
